@@ -26,6 +26,8 @@
  * THIS SOFTWARE.
  */
 
+#include <stddef.h>
+
 #include "atca_basic.h"
 #include "atca_version.h"
 

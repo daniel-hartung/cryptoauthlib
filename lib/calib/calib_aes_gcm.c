@@ -90,7 +90,7 @@ static ATCA_STATUS calib_aes_ghash(ATCADevice device, const uint8_t* h, const ui
 
     if (data_size)
     {
-        memcpy(pad_bytes, data, data_size);
+        //memcpy(pad_bytes, data, data_size);
         memset(&pad_bytes[data_size], 0, sizeof(pad_bytes) - data_size);
 
         for (xor_index = 0; xor_index < AES_DATA_SIZE; xor_index++)

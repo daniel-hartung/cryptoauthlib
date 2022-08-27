@@ -89,12 +89,12 @@ ATCA_STATUS calib_kdf(ATCADevice device, uint8_t mode, uint16_t key_id, const ui
         if ((mode & KDF_MODE_ALG_MASK) == KDF_MODE_ALG_AES)
         {
             // AES algorithm has a fixed message size
-            memcpy(&packet.data[KDF_DETAILS_SIZE], message, AES_DATA_SIZE);
+            //memcpy(&packet.data[KDF_DETAILS_SIZE], message, AES_DATA_SIZE);
         }
         else
         {
             // All other algorithms encode message size in the last byte of details
-            memcpy(&packet.data[KDF_DETAILS_SIZE], message, packet.data[3]);
+            //memcpy(&packet.data[KDF_DETAILS_SIZE], message, packet.data[3]);
         }
 
         // Build command
@@ -123,13 +123,13 @@ ATCA_STATUS calib_kdf(ATCADevice device, uint8_t mode, uint16_t key_id, const ui
         // Return OutData if possible
         if (out_data != NULL && packet.data[ATCA_COUNT_IDX] >= (ATCA_PACKET_OVERHEAD + out_data_size))
         {
-            memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], out_data_size);
+            //memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], out_data_size);
         }
 
         // return OutNonce if possible
         if (out_nonce != NULL && packet.data[ATCA_COUNT_IDX] >= (ATCA_PACKET_OVERHEAD + out_data_size + 32))
         {
-            memcpy(out_nonce, &packet.data[ATCA_RSP_DATA_IDX + out_data_size], 32);
+            //memcpy(out_nonce, &packet.data[ATCA_RSP_DATA_IDX + out_data_size], 32);
         }
     }
     while (false);

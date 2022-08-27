@@ -1,0 +1,32 @@
+lib/CMakeFiles/cryptoauth.dir/atcacert/atcacert_der.c.o: \
+ /home/daniel/u-boot/lib/cryptoauthlib/lib/atcacert/atcacert_der.c \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/stdc-predef.h \
+ /home/daniel/u-boot/lib/cryptoauthlib/lib/atcacert/atcacert_der.h \
+ /opt/ssd/3.4.1/sysroots/x86_64-ssdsdk-linux/usr/lib/arm-ssd-linux-gnueabi/gcc/arm-ssd-linux-gnueabi/11.2.0/include/stddef.h \
+ /opt/ssd/3.4.1/sysroots/x86_64-ssdsdk-linux/usr/lib/arm-ssd-linux-gnueabi/gcc/arm-ssd-linux-gnueabi/11.2.0/include/stdint.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/stdint.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/libc-header-start.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/features.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/features-time64.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/wordsize.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/timesize.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/sys/cdefs.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/long-double.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/long-double-32.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/gnu/stubs.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/gnu/stubs-32.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/gnu/stubs-hard.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/types.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/typesizes.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/typesizes-32.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/time64.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/wchar.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/stdint-intn.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/stdint-uintn.h \
+ /home/daniel/u-boot/lib/cryptoauthlib/lib/atcacert/atcacert.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/string.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/types/locale_t.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/types/__locale_t.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/strings.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/strings_fortified.h \
+ /opt/ssd/3.4.1/sysroots/cortexa8hf-neon-ssd-linux-gnueabi/usr/include/bits/string_fortified.h

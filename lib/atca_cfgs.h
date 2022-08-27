@@ -39,6 +39,8 @@ extern "C" {
 /** \brief default configuration for an ECCx08A device on the first logical I2C bus */
 extern ATCAIfaceCfg cfg_ateccx08a_i2c_default;
 
+extern ATCAIfaceCfg cfg_atecc608b_i2c_default;
+
 /** \brief default configuration for an ECCx08A device on the logical SWI bus over UART*/
 extern ATCAIfaceCfg cfg_ateccx08a_swi_default;
 

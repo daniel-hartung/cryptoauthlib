@@ -232,10 +232,16 @@ elseif(APPLE)
 set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_linux.c)
 set(HID_SRC ../third_party/hidapi/mac/hid.c)
 elseif(UNIX)
+if(UBOOT)
+set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_uboot.c)
+set(TWI_SRC hal/hal_uboot_i2c_userspace.c)
+set(SPI_SRC hal/hal_uboot_spi_userspace.c)
+else()
 set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_linux.c)
 set(TWI_SRC hal/hal_linux_i2c_userspace.c)
 set(SPI_SRC hal/hal_linux_spi_userspace.c)
 set(LINUX TRUE)
+endif()
 endif()
 
 if(ATCA_ZEPHYR_SUPPORT)
@@ -290,7 +296,11 @@ if(ATCA_HAL_KIT_UART OR ATCA_HAL_SWI_UART)
 if(WIN32)
 set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_windows_kit_uart.c)
 elseif(LINUX OR APPLE)
+if(UBOOT)
+set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_uboot_uart_userspace.c)
+else()
 set(CRYPTOAUTH_SRC ${CRYPTOAUTH_SRC} hal/hal_linux_uart_userspace.c)
+endif()
 endif()
 endif()
 
@@ -383,10 +393,16 @@ install(TARGETS ${PROJECT_NAME}
         LIBRARY
           DESTINATION ${DEFAULT_LIB_PATH}
           COMPONENT Libraries
-          NAMELINK_COMPONENT Development)
+          NAMELINK_COMPONENT Development
+	ARCHIVE
+          DESTINATION ${DEFAULT_LIB_PATH}
+          COMPONENT Libraries)
 else()
 install(TARGETS ${PROJECT_NAME}
         LIBRARY
+          DESTINATION ${DEFAULT_LIB_PATH}
+          COMPONENT Libraries
+	ARCHIVE
           DESTINATION ${DEFAULT_LIB_PATH}
           COMPONENT Libraries)
 endif()

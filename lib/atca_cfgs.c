@@ -40,6 +40,7 @@
 #if defined(ATCA_ECC_SUPPORT) && defined(ATCA_HAL_I2C)
 /** \brief default configuration for an ECCx08A device */
 ATCAIfaceCfg cfg_ateccx08a_i2c_default = {
+    /*
     .iface_type                 = ATCA_I2C_IFACE,
     .devtype                    = ATECC608,
     {
@@ -57,8 +58,31 @@ ATCAIfaceCfg cfg_ateccx08a_i2c_default = {
     },
     .wake_delay                 = 1500,
     .rx_retries                 = 20
+    */
+   .iface_type                 = ATCA_I2C_IFACE,
+		.devtype                    = ATECC608B,
+		{
+			.atcai2c.address        = 0x60,
+			.atcai2c.bus            = 1,
+			.atcai2c.baud           = 115200,
+		},
+		.wake_delay                 = 1500,
+		.rx_retries                 = 20
 };
 #endif
+
+ATCAIfaceCfg cfg_atecc608b_i2c_default = {
+		
+		.iface_type                 = ATCA_I2C_IFACE,
+		.devtype                    = ATECC608A,
+		{
+			.atcai2c.address        = 0x60,
+			.atcai2c.bus            = 1,
+			.atcai2c.baud           = 100000,
+		},
+		.wake_delay                 = 1000,
+		.rx_retries                 = 20
+	};
 
 #if defined(ATCA_ECC_SUPPORT) && defined(ATCA_HAL_SWI)
 /** \brief default configuration for an ECCx08A device on the logical SWI bus over UART*/

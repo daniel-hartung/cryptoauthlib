@@ -34,6 +34,8 @@
 #include <pthread.h>
 #include <errno.h>
 
+#include <time.h>
+
 #include "atca_hal.h"
 
 /** \defgroup hal_ Hardware abstraction layer (hal_)
@@ -50,7 +52,7 @@
  */
 void hal_delay_us(uint32_t delay)
 {
-    usleep(delay);
+    //usleep(delay);
 }
 
 /** \brief This function delays for a number of tens of microseconds.
@@ -77,6 +79,7 @@ void hal_delay_ms(uint32_t delay)
 }
 
 #ifndef ATCA_USE_RTOS_TIMER
+#if 0
 #if ATCA_USE_SHARED_MUTEX
 
 typedef struct
@@ -348,6 +351,7 @@ ATCA_STATUS hal_unlock_mutex(void * pMutex)
         return ATCA_SUCCESS;
     }
 }
+#endif
 #endif
 #endif
 /** @} */

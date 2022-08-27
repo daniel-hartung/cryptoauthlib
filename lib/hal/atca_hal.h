@@ -68,6 +68,7 @@ ATCA_STATUS hal_i2c_post_init(ATCAIface iface);
 ATCA_STATUS hal_i2c_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata, int txlength);
 ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t word_address, uint8_t *rxdata, uint16_t *rxlength);
 ATCA_STATUS hal_i2c_control(ATCAIface iface, uint8_t option, void* param, size_t paramlen);
+ATCA_STATUS hal_i2c_random();
 #ifdef ATCA_LEGACY_HAL
 ATCA_STATUS hal_i2c_wake(ATCAIface iface);
 ATCA_STATUS hal_i2c_idle(ATCAIface iface);

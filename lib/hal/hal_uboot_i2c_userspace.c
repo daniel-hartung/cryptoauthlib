@@ -27,7 +27,7 @@
 
 #include <cryptoauthlib.h>
 
-#include <linux/i2c-dev.h>
+//#include <linux/i2c-dev.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
@@ -40,6 +40,16 @@
 #include <stdlib.h>
 
 #include "atca_hal.h"
+
+//typedef __u8 u8;
+typedef uint8_t u8;
+typedef unsigned char uchar;
+
+#include <../../../../include/i2c.h>
+
+//#include <../../../../arch/xtensa/include/asm/config.h>
+//#include <../../../../include/common.h>
+//#include <../../../../cmd/i2c.c>
 
 /** \defgroup hal_ Hardware abstraction layer (hal_)
  *
@@ -91,7 +101,7 @@ ATCA_STATUS hal_i2c_init(ATCAIface iface, ATCAIfaceCfg* cfg)
         {
             hal_data->ref_ct = 1;  // buses are shared, this is the first instance
 
-            (void)snprintf(hal_data->i2c_file, sizeof(hal_data->i2c_file) - 1, "/dev/i2c-%d", bus);
+            //(void)snprintf(hal_data->i2c_file, sizeof(hal_data->i2c_file) - 1, "/dev/i2c-%d", bus);
 
             iface->hal_data = hal_data;
 
@@ -135,12 +145,34 @@ ATCA_STATUS hal_i2c_send(ATCAIface iface, uint8_t address, uint8_t *txdata, int 
         return ATCA_NOT_INITIALIZED;
     }
 
+    struct udevice *bus;
+	struct udevice *dev;
+	int ret;
+/*
+	if (i2c_get_cur_bus(&bus))
+		return ATCA_FUNC_FAIL;
+
+	ret = i2c_get_cur_bus_chip(address, &dev);
+*/
+	//if (ret)
+		//return i2c_report_err(ret, I2C_ERR_WRITE);
+    //struct udevice *bus, *device;
+
+    //i2c_get_chip(bus, 0x60, 1, &dev);
+
+    //i2c_init(115200, 0x3C);
+    //i2c_set_bus_num(1);
+    //ret = dm_i2c_write(dev, 0x00, txdata, txlength);
+    ret = i2c_write(address, 0x00, 0, txdata, txlength);
+    
+#if 0
     // Initiate I2C communication
     if ( (f_i2c = open(hal_data->i2c_file, O_RDWR)) < 0)
     {
         return ATCA_COMM_FAIL;
     }
 
+    #define I2C_SLAVE	0x0703
     // Set Device Address
     if (ioctl(f_i2c, I2C_SLAVE, address >> 1) < 0)
     {
@@ -156,7 +188,23 @@ ATCA_STATUS hal_i2c_send(ATCAIface iface, uint8_t address, uint8_t *txdata, int 
     }
 
     close(f_i2c);
+#endif
+
     return ATCA_SUCCESS;
+}
+
+ATCA_STATUS hal_i2c_random()
+{
+    uint32_t status;
+	uint8_t randomNumber[32] = {0};
+
+	status = atcab_init(&cfg_atecc608b_i2c_default);
+	if (status == ATCA_SUCCESS)
+	{
+		atcab_random(&randomNumber);
+    }
+    int i = 0;
+        i += 1;
 }
 
 /** \brief HAL implementation of I2C receive function
@@ -177,6 +225,7 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t address, uint8_t *rxdata, u
         return ATCA_NOT_INITIALIZED;
     }
 
+#if 0
     // Initiate I2C communication
     if ( (f_i2c = open(hal_data->i2c_file, O_RDWR)) < 0)
     {
@@ -197,6 +246,20 @@ ATCA_STATUS hal_i2c_receive(ATCAIface iface, uint8_t address, uint8_t *rxdata, u
     }
 
     close(f_i2c);
+#endif
+
+    struct udevice *bus;
+	struct udevice *dev;
+	int ret;
+/*
+	if (i2c_get_cur_bus(&bus))
+		return ATCA_FUNC_FAIL;
+
+	ret = i2c_get_cur_bus_chip(address, &dev);
+*/
+    //ret = dm_i2c_read(dev, 0x00, &rxdata, rxlength);
+    ret = i2c_read(address, 0x00, 0, rxdata, *rxlength);
+
     return ATCA_SUCCESS;
 }
 

@@ -34,6 +34,7 @@
 #include "cryptoauthlib.h"
 #include "crypto/atca_crypto_sw_sha2.h"
 
+
 /** \defgroup atcab_ Basic Crypto API methods (atcab_)
  *
  * \brief

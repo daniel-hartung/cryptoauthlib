@@ -1,0 +1,43 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-O2;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags:  
+
+The output was:
+1
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/bin/ld: cannot find -lssp_nonshared
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/bin/ld: cannot find -lssp
+collect2: error: ld returned 1 exit status
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf303/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf303.dir/build.make CMakeFiles/cmTC_cf303.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf303.dir/testCCompiler.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_cf303.dir/testCCompiler.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_cf303
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf303.dir/link.txt --verbose=1
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_cf303.dir/testCCompiler.c.o  -o cmTC_cf303 
+arm-none-eabi-gcc: error: unrecognized command-line option '-rdynamic'
+CMakeFiles/cmTC_cf303.dir/build.make:97: recipe for target 'cmTC_cf303' failed
+make[1]: *** [cmTC_cf303] Error 1
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cf303/fast' failed
+make: *** [cmTC_cf303/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-O2;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi
+Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+Id flags:  
+
+The output was:
+1
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/bin/ld: cannot find -lssp_nonshared
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/bin/ld: cannot find -lssp
+collect2: error: ld returned 1 exit status
+
+

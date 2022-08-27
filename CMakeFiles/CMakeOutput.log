@@ -1,0 +1,206 @@
+The system is: Linux - 5.4.0-109-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-O2;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types;
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -mfpu=neon;-mfloat-abi=hard;-mcpu=cortex-a8;-fstack-protector-strong;-O2;-D_FORTIFY_SOURCE=2;-Wformat;-Wformat-security;-Werror=format-security;--sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi
+Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_08337/fast"
+/usr/bin/make -f CMakeFiles/cmTC_08337.dir/build.make CMakeFiles/cmTC_08337.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08337.dir/testCCompiler.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_08337.dir/testCCompiler.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C static library libcmTC_08337.a
+/usr/bin/cmake -P CMakeFiles/cmTC_08337.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08337.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_08337.a  CMakeFiles/cmTC_08337.dir/testCCompiler.c.o
+/usr/bin/ranlib libcmTC_08337.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f7be1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7be1.dir/build.make CMakeFiles/cmTC_f7be1.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C static library libcmTC_f7be1.a
+/usr/bin/cmake -P CMakeFiles/cmTC_f7be1.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7be1.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_f7be1.a  CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o
+/usr/bin/ranlib libcmTC_f7be1.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f7be1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f7be1.dir/build.make CMakeFiles/cmTC_f7be1.dir/build]
+  ignore line: [make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C static library libcmTC_f7be1.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_f7be1.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7be1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/ar qc libcmTC_f7be1.a  CMakeFiles/cmTC_f7be1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/ranlib libcmTC_f7be1.a]
+  ignore line: [make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp']
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29ad5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29ad5.dir/build.make CMakeFiles/cmTC_29ad5.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29ad5.dir/feature_tests.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -std=c11 -o CMakeFiles/cmTC_29ad5.dir/feature_tests.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_29ad5.a
+/usr/bin/cmake -P CMakeFiles/cmTC_29ad5.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29ad5.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_29ad5.a  CMakeFiles/cmTC_29ad5.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_29ad5.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_495b9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_495b9.dir/build.make CMakeFiles/cmTC_495b9.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_495b9.dir/feature_tests.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -std=c99 -o CMakeFiles/cmTC_495b9.dir/feature_tests.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_495b9.a
+/usr/bin/cmake -P CMakeFiles/cmTC_495b9.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_495b9.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_495b9.a  CMakeFiles/cmTC_495b9.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_495b9.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfb1c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfb1c.dir/build.make CMakeFiles/cmTC_cfb1c.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfb1c.dir/feature_tests.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -std=c90 -o CMakeFiles/cmTC_cfb1c.dir/feature_tests.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_cfb1c.a
+/usr/bin/cmake -P CMakeFiles/cmTC_cfb1c.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfb1c.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_cfb1c.a  CMakeFiles/cmTC_cfb1c.dir/feature_tests.c.o
+/usr/bin/ranlib libcmTC_cfb1c.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the malloc exist passed with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80047/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80047.dir/build.make CMakeFiles/cmTC_80047.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80047.dir/CheckSymbolExists.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_80047.dir/CheckSymbolExists.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C static library libcmTC_80047.a
+/usr/bin/cmake -P CMakeFiles/cmTC_80047.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80047.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_80047.a  CMakeFiles/cmTC_80047.dir/CheckSymbolExists.c.o
+/usr/bin/ranlib libcmTC_80047.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+File /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc
+  return ((int*)(&malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the free exist passed with the following output:
+Change Dir: /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b72e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b72e.dir/build.make CMakeFiles/cmTC_9b72e.dir/build
+make[1]: Entering directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b72e.dir/CheckSymbolExists.c.o
+/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/daniel/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_9b72e.dir/CheckSymbolExists.c.o   -c /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C static library libcmTC_9b72e.a
+/usr/bin/cmake -P CMakeFiles/cmTC_9b72e.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b72e.dir/link.txt --verbose=1
+/usr/bin/ar qc libcmTC_9b72e.a  CMakeFiles/cmTC_9b72e.dir/CheckSymbolExists.c.o
+/usr/bin/ranlib libcmTC_9b72e.a
+make[1]: Leaving directory '/home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp'
+
+File /home/daniel/u-boot/lib/cryptoauthlib/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef free
+  return ((int*)(&free))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

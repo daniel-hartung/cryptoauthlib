@@ -95,7 +95,7 @@ ATCA_STATUS calib_sha_base(ATCADevice device, uint8_t mode, uint16_t length, con
         if (cmd_mode != SHA_MODE_SHA256_PUBLIC && cmd_mode != SHA_MODE_HMAC_START &&
             cmd_mode != SHA_MODE_ECC204_HMAC_START)
         {
-            memcpy(packet.data, message, (size_t)length);
+            ////memcpy(packet.data, message, (size_t)length);
         }
 
         if ((status = atSHA(atcab_get_device_type_ext(device), &packet, length)) != ATCA_SUCCESS)
@@ -118,7 +118,7 @@ ATCA_STATUS calib_sha_base(ATCADevice device, uint8_t mode, uint16_t length, con
                 break;
             }
             *data_out_size = packet.data[ATCA_COUNT_IDX] - ATCA_PACKET_OVERHEAD;
-            memcpy(data_out, &packet.data[ATCA_RSP_DATA_IDX], *data_out_size);
+            //////memcpy(data_out, &packet.data[ATCA_RSP_DATA_IDX], *data_out_size);
         }
     }
     while (0);
@@ -243,7 +243,7 @@ ATCA_STATUS calib_hw_sha2_256_update(ATCADevice device, atca_sha256_ctx_t* ctx, 
     uint32_t i = 0;
 
     // Copy data into current block
-    memcpy(&ctx->block[ctx->block_size], data, copy_size);
+    //memcpy(&ctx->block[ctx->block_size], data, copy_size);
 
     if (ctx->block_size + data_size < ATCA_SHA256_BLOCK_SIZE)
     {
@@ -272,7 +272,7 @@ ATCA_STATUS calib_hw_sha2_256_update(ATCADevice device, atca_sha256_ctx_t* ctx, 
     // Save any remaining data
     ctx->total_msg_size += (block_count + 1) * ATCA_SHA256_BLOCK_SIZE;
     ctx->block_size = data_size % ATCA_SHA256_BLOCK_SIZE;
-    memcpy(ctx->block, &data[copy_size + block_count * ATCA_SHA256_BLOCK_SIZE], (size_t)ctx->block_size);
+    //memcpy(ctx->block, &data[copy_size + block_count * ATCA_SHA256_BLOCK_SIZE], (size_t)ctx->block_size);
 
     return ATCA_SUCCESS;
 }
@@ -429,7 +429,7 @@ ATCA_STATUS calib_sha_hmac_update(ATCADevice device, atca_hmac_sha256_ctx_t* ctx
     uint32_t i = 0;
 
     // Copy data into current block
-    memcpy(&ctx->block[ctx->block_size], data, copy_size);
+    //memcpy(&ctx->block[ctx->block_size], data, copy_size);
 
     if (ctx->block_size + data_size < ATCA_SHA256_BLOCK_SIZE)
     {
@@ -458,7 +458,7 @@ ATCA_STATUS calib_sha_hmac_update(ATCADevice device, atca_hmac_sha256_ctx_t* ctx
     // Save any remaining data
     ctx->total_msg_size += (block_count + 1) * ATCA_SHA256_BLOCK_SIZE;
     ctx->block_size = data_size % ATCA_SHA256_BLOCK_SIZE;
-    memcpy(ctx->block, &data[copy_size + block_count * ATCA_SHA256_BLOCK_SIZE], (size_t)ctx->block_size);
+    //memcpy(ctx->block, &data[copy_size + block_count * ATCA_SHA256_BLOCK_SIZE], (size_t)ctx->block_size);
 
     return ATCA_SUCCESS;
 }

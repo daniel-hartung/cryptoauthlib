@@ -28,12 +28,12 @@
 #include <cryptoauthlib.h>
 
 FILE * g_trace_fp;
-
+/*
 void atca_trace_config(FILE* fp)
 {
     g_trace_fp = fp;
 }
-
+*/
 ATCA_STATUS atca_trace(ATCA_STATUS status)
 {
     return status;
@@ -43,7 +43,7 @@ ATCA_STATUS atca_trace_msg(ATCA_STATUS status, const char * msg)
 {
     if (ATCA_SUCCESS != status)
     {
-        fprintf(g_trace_fp ? g_trace_fp : stderr, msg, status);
+        //fprintf(g_trace_fp ? g_trace_fp : stderr, msg, status);
     }
     return status;
 }
